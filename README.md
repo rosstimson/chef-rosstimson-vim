@@ -64,7 +64,7 @@ When contributing it would be very helpful if you could run these via
 
 Lastly, there are [Serverspec][serverspec] integration tests for use
 ignored. To see all of the available integration test suites just check
-`bundle exec rake T` or `bundle exec kitchen list`, it would be great if
+`bundle exec rake -T` or `bundle exec kitchen list`, it would be great if
 you run these tests too, you may however leave out the Amazon Linux test
 suite if you do not have an AWS account as it runs on an EC2 instance
 (you will be billed for running this).
