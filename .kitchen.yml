@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: fedora-20
+
+suites:
+  - name: default
+    run_list: recipe[rosstimson-vim::default]
+  - name: desktop
+    run_list: recipe[rosstimson-vim::default]
+    attributes:
+      rosstimson-vim:
+        desktop:
+          enable: true
