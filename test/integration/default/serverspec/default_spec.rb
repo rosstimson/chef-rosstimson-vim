@@ -31,4 +31,8 @@ describe 'installs some useful utitilties/tools' do
   describe command('command -v par') do
     it { should return_exit_status 0 }
   end
+
+  describe command('command -v ag') do
+    it { should return_exit_status 0 }
+  end
 end

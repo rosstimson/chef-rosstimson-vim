@@ -35,3 +35,7 @@ bash 'compile_vim' do
   EOH
   action :nothing
 end
+
+# Install some extra packages that my Vim config makes usage of.
+package 'par'
+package 'the_silver_searcher'

@@ -29,7 +29,7 @@ attribute        'rosstimson-vim/configuration',
   display_name:  'Configuration options',
   description:   'Options passed to ./configure to compile with certain features',
   default:       "--with-features=huge \
-                  --prefix=#{default['rosstimson-vim']['prefix']} \
+                  --prefix=/usr/local \
                   --without-x \
                   --with-tlib=ncurses \
                   --enable-pythoninterp \

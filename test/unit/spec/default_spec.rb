@@ -16,4 +16,12 @@ describe 'rosstimson-vim::default' do
   it 'includes mercurial::default recipe' do
     expect(chef_run).to include_recipe('mercurial')
   end
+
+  it 'installs par package' do
+    expect(chef_run).to install_package('par')
+  end
+
+  it 'installs the_silver_searcher package' do
+    expect(chef_run).to install_package('the_silver_searcher')
+  end
 end
