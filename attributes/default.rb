@@ -16,7 +16,6 @@ if node['rosstimson-vim']['desktop']['enable']
   default['rosstimson-vim']['configuration'] = "--with-features=huge \
                                                 --prefix=#{default['rosstimson-vim']['prefix']} \
                                                 --enable-gui \
-                                                --enable-fontset \
                                                 --with-tlib=ncurses \
                                                 --enable-pythoninterp \
                                                 --enable-multibyte \
